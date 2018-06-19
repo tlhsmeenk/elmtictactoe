@@ -1,13 +1,40 @@
-<html>
-  <head>
-    <script type="text/javascript" src="dist/bundle.js"></script>
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script type="text/javascript" src="dist/bundle.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
+</head>
+
+<title>Share</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+
+<body class="bg-blue">
+  <header class="bg-gold sans-serif">
+    <div class="mw9 center pa4 pt5-ns ph7-l">
+      <!-- <time class="f6 mb2 dib ttu tracked">
+        <small>27 July, 2015</small>
+      </time> -->
+      <h3 class="f2 f1-m f-headline-l measure-narrow lh-title mv0">
+        <span class="bg-black-90 lh-copy white pa1 tracked-tight">
+          Tic tac toe!
+        </span>
+      </h3>
+      <h4 class="f3 fw1 georgia i">Trying out elm with tacyons :-)</h4>
+      <h5 class="f6 ttu tracked black-80">By Thijs Smeenk</h5>
+    </div>
+  </header>
+
   <body>
     <div id="elm-app"></div>
-
-    <script type="text/javascript">
-      var elmDiv = document.getElementById('elm-app');
-      Elm.Main.embed(elmDiv);
-    </script>
   </body>
+
+
+  <script type="text/javascript">
+    var elmDiv = document.getElementById('elm-app');
+    Elm.Main.embed(elmDiv);
+  </script>
+</body>
+
 </html>
